@@ -1,0 +1,74 @@
+<html>
+<head>
+	<meta charset="utf8">
+	<meta description="Upoznavanje sa esportom">
+	<meta keywords="LoL, Dota, CsGo, Wow, Gta5">
+	<title>Kupovina karata</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<style>
+		body div div { margin: 1em 0}
+		body {
+			margin: 20;
+			padding: 1em;
+			background-image: url(./images/gaming-3.jpg);
+			background-size: cover;
+			min-height: 100vh;
+			text-align: left;
+		}
+	</style>
+<script>
+	function izracunaj() {
+        var greske = '';
+        var a = document.getElementsByName('a')[0].value;
+        var b = document.getElementsByName('b')[0].value;
+        
+        var checka = Number(a) <= 0 ? false : true;
+        var checkb = Number(b) <= 0 ? false : true;
+        var elementZaIspis = document.getElementsByTagName('div')[0];
+
+ 
+
+        if (!checka || !checkb) {
+            greske = "Vrednosti unosa moraju biti veći od nule";
+            elementZaIspis.innerHTML = greske;
+            return;
+        }
+        
+        var c = a * b;
+        elementZaIspis.innerHTML = "Cena karte je " + c + "din";
+		}
+</script>
+</head>
+<body>
+	<above-header>
+			<a href="./index-en.html">
+				<img src="./images/flag-eng.png">
+			</a>
+			<a href="./index.html">
+				<img src="./images/flag-srb.png">
+			</a>
+		<form>
+			<input type="text" name="search" placeholder="Pretraga">
+			<input type="submit" value="Posalji">
+		</form>
+	</above-header>
+	<header>
+		<!-- <img src="./images/esports-new.png"> -->
+	</header>
+	<nav>
+		<a href="./index.html">Pocetna</a>
+		<a href="./timovi.html">Timovi</a>
+		<a href="./turniri.html">Turniri</a>
+		<a href="./kupovinakarata.html">Kupovina karata</a>
+		<a href="./kontakt.html">Kontakt</a>
+	</nav>
+	<br>
+	Količina karata
+		<input type="number" name="a">
+    Cena karte [din]
+		<input type="number" name="b">
+		<br>
+		<button onclick="izracunaj();">Izračunaj</button>
+		<div></div>
+</body>
+</html>  

@@ -1,0 +1,38 @@
+timovi-strana {
+	display: block;
+}
+	
+timovi-strana tim {
+	display: block;
+	margin-bottom: 1em;
+} 
+
+timovi-strana tim img {
+	width: 150px;
+	height: auto;
+	display: inline-block;
+	
+}
+timovi-strana tim img,
+timovi-strana tim div {
+	display: inline-block;
+	vertical-align: top;
+}	
+
+timovi-strana tim h3 {
+	font-size: 1.25em;
+	margin: 0;	
+}
+
+timovi-strana tim podaci {
+	font-size: 0.75em;
+}
+
+timovi-strana tim podaci div {
+	display: inline-block;
+	color: purple;
+}
+
+timovi-strana tim .opis {
+	display: block;
+}

@@ -1,0 +1,18 @@
+kontakt-strana form {
+	display: inline-block;
+	width: 50%;
+	
+}
+kontakt-strana form input,
+kontakt-strana form textarea {
+		width: 100%;
+}
+
+kontakt-strana iframe {
+	display: inline-block;
+	width: 45%;
+	height: auto;
+}
+kontakt-strana form label {
+	display: block;
+}
